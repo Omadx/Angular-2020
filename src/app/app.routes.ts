@@ -5,6 +5,8 @@ import { CasaComponent } from './components/home/casa/casa.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent} from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { SearchComponent } from './components/search/search.component';
+
 
 
 //import { Name2Component } from './';
@@ -17,11 +19,12 @@ const ROUTES: Routes = [
     { path: 'about', component: AboutComponent},
     { path: 'heroes', component: HeroesComponent},
     { path: 'heroe/:id', component: HeroeComponent },
+    { path: 'buscar/:termino', component: SearchComponent},
+    { path: '**', pathMatch: 'full', redirectTo: 'home'}
     //{ path: 'path3', component: Name3Component },
     //{ path: 'path4', component: Name4Component },
-    //{ path: '**', component: PageNotFoundComponent },
 
-    //{ path: 'path/:routeParam', component: MyComponent },
+    // //{ path: 'path/:routeParam', component: MyComponent },
     //{ path: 'staticPath', component: ... },
     //{ path: '**', component: ... },
     //{ path: 'oldPath', redirectTo: '/staticPath' },
